@@ -1,0 +1,62 @@
+/* Стилі для зображень */
+body {
+	background-color: #ecd8c6;
+	   font-family: monospace, sans-serif;
+	   margin: 0;
+	   padding: 0;
+   }
+   
+   header {
+	   background-color: #86562d;
+	   color: white;
+	   text-align: center;
+	   padding: 1em 0;
+   }
+   .img {
+	   max-width: 100%;
+	   height: auto;
+   }
+   .left {
+	   float: left;
+	   margin-right: 350px;
+   }
+   .right {
+	   float: right;
+	   margin-left: 10px;
+   }
+   
+   /* Стилі для галереї */
+   .inline-img {
+	   display: flex;
+	   flex-wrap: wrap;
+	   gap: 10px;
+   }
+   .inline-img img {
+	   width: 150px;
+	   height: auto;
+	   transition: transform 0.3s;
+   }
+   .inline-img img:hover {
+	   transform: scale(1.1);
+   }
+   
+   /* Стилі для мультимедійних елементів */
+   .multimedia {
+	   display: flex;
+	   gap: 10px;
+   }
+   .multimedia-video {
+	   flex: 1;
+   }
+   
+   /* Анімація */
+   .square {
+	   width: 100px;
+	   height: 100px;
+	   background-color: red;
+	   animation: spin 4s linear infinite;
+   }
+   @keyframes spin {
+	   from { transform: rotate(0deg); }
+	   to { transform: rotate(360deg); }
+   }
